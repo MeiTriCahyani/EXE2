@@ -46,7 +46,16 @@ namespace EXE2
         }
         public void display()
         {
-
+            // Menampilkan array yang tersusun
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine(" Element array yang telah tersusun ");
+            Console.WriteLine("-----------------------------------");
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(MT[j]);
+            }
+            Console.WriteLine("");
         }
 
         static void Main(string[] args)
