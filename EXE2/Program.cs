@@ -17,6 +17,12 @@ namespace EXE2
         //mendapatkan jumlah elemen untuk disimpan apada array
         int i;
 
+        //number of comparasion
+        private int cmp_count = 0; 
+
+        //number of data movement
+        private int mov_count = 0;
+
         //fungsi methode untuk menerima masukkan
         public void read()
         {
@@ -74,6 +80,11 @@ namespace EXE2
                     }
                 }
             }
+        }
+
+        void swap (int x, int y)
+        {
+           
         }
         static void Main(string[] args)
         {
