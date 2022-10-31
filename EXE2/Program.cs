@@ -89,17 +89,19 @@ namespace EXE2
             MT[x] = MT[y];
             MT[y] = temp;
         }
+
+        //membuat merge sort array
         void mergesort(int low, int hight)
         {
-            int k, i, MC,mid;
+            int k, i, MC, mid;
             if (low >= hight) ;
             return;
 
             i = low;
-            MC = mid+1;
+            MC = mid + 1;
             k = low;
-            mid = (low + hight)/2;
-  
+            mid = (low + hight) / 2;
+
 
         }
         static void Main(string[] args)
