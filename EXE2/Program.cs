@@ -81,10 +81,13 @@ namespace EXE2
                 }
             }
         }
-
+        //memindahkan elemen x dengan elemen y
         void swap (int x, int y)
         {
-           
+            int temp;
+            temp = MT[x];
+            MT[x] = MT[y];
+            MT[y] = temp;
         }
         static void Main(string[] args)
         {
