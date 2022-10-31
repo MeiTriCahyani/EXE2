@@ -57,9 +57,9 @@ namespace EXE2
             Console.WriteLine("-----------------------------------");
             Console.WriteLine(" Element array yang telah tersusun ");
             Console.WriteLine("-----------------------------------");
-            for (int j = 0; j < n; j++)
+            for (int MC = 0; MC < n; MC++)
             {
-                Console.WriteLine(MT[j]);
+                Console.WriteLine(MT[MC]);
             }
             Console.WriteLine("");
         }
@@ -68,15 +68,15 @@ namespace EXE2
             for (int i = 1; i < n; i++) // for n - 1 passes
             {
                 //pada pass i, bandingkan n - 1 elemen pertama dengan elemen selanjutnya
-                for (int j = i-1; j < n; j++)
+                for (int MC = i-1; MC < n; MC++)
                 {
-                    if (MT[j] > MT[j + 1]) // jika elmen tidak dalam urutan yang benar
+                    if (MT[MC] > MT[MC + 1]) // jika elmen tidak dalam urutan yang benar
                     {
                         // tukar elemen
                         int temp;
-                        temp = MT[j];
-                        MT[j] = MT[j +1];
-                        MT[j + 1] = temp;
+                        temp = MT[MC];
+                        MT[MC] = MT[MC +1];
+                        MT[MC + 1] = temp;
                     }
                 }
             }
@@ -88,6 +88,19 @@ namespace EXE2
             temp = MT[x];
             MT[x] = MT[y];
             MT[y] = temp;
+        }
+        void q_sort(int low, int hight)
+        {
+            int k, i, MC,mid;
+            if (low >= hight) ;
+            return;
+
+            i = low;
+            MC = mid+1;
+            k = low;
+            mid = (low + hight)/2;
+  
+
         }
         static void Main(string[] args)
         {
