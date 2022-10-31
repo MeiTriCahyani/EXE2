@@ -17,6 +17,22 @@ namespace EXE2
         //mendapatkan jumlah elemen untuk disimpan apada array
         int i;
 
+        //fungsi methode untuk menerima masukkan
+        public void read()
+        {
+            //menerima angka untuk banyaknya data yang disimpan pada array
+            while (true)
+            {
+                Console.WriteLine("Masukkan banyaknya elemen pada array:");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 32)
+                    break;
+                else
+                    Console.WriteLine(" \n Array dapat mempunyai maksimal 32 elemen.\n");
+            }
+        }
+
         static void Main(string[] args)
         {
         }
