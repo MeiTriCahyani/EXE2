@@ -89,7 +89,7 @@ namespace EXE2
             MT[x] = MT[y];
             MT[y] = temp;
         }
-        void q_sort(int low, int hight)
+        void mergesort(int low, int hight)
         {
             int k, i, MC,mid;
             if (low >= hight) ;
@@ -104,6 +104,50 @@ namespace EXE2
         }
         static void Main(string[] args)
         {
+            Program mylist = new Program();
+            int pilihanmenu;
+            do
+            {
+                Console.WriteLine(" Menu Option ");
+                Console.WriteLine("===================");
+                Console.WriteLine("1. SelectionSort");
+                Console.WriteLine("2. MergeSort");
+                Console.WriteLine("3. Exit");
+                Console.Write(" Enter your choice (1,2,3) :");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+
+                switch (pilihanmenu)
+                {
+                    case 1:
+                        Console.WriteLine("");
+                        Console.WriteLine(".................");
+                        Console.WriteLine(" Selection Short");
+                        Console.WriteLine(".................");
+                        mylist.read();
+                        mylist.display();
+                        mylist.SelectionSortArray();
+                        break;
+                    case 2:
+                        Console.WriteLine("");
+                        Console.WriteLine(".................");
+                        Console.WriteLine("MergeSort Search");
+                        Console.WriteLine(".................");
+                        mylist.read();
+                        mylist.display();
+                        mylist.mergesort();
+                        break;
+                    case 3:
+                        Console.WriteLine("Exit");
+                        break;
+                    default:
+                        Console.WriteLine("eror");
+                        break;
+                }
+                //to exit from the console
+                Console.WriteLine("\n\npress return to exit.");
+                Console.ReadLine();
+
+            } while (pilihanmenu != 3);
         }
     }
 }
