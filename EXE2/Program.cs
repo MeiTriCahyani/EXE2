@@ -31,6 +31,22 @@ namespace EXE2
                 else
                     Console.WriteLine(" \n Array dapat mempunyai maksimal 32 elemen.\n");
             }
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine(" Masukkan elemen array ");
+            Console.WriteLine("-----------------------");
+            
+            //pengguna memasukkan element pada array
+            for(i = 0; i < 32; i++)
+            {
+                Console.Write("<" + i + ">");
+                string s1 = Console.ReadLine();
+                MT[i] = Int32.Parse(s1);
+            }
+        }
+        public void display()
+        {
+
         }
 
         static void Main(string[] args)
