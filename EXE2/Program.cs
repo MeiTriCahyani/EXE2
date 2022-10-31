@@ -57,7 +57,24 @@ namespace EXE2
             }
             Console.WriteLine("");
         }
-
+        public void SelectionSortArray()
+        {
+            for (int i = 1; i < n; i++) // for n - 1 passes
+            {
+                //pada pass i, bandingkan n - 1 elemen pertama dengan elemen selanjutnya
+                for (int j = i-1; j < n; j++)
+                {
+                    if (MT[j] > MT[j + 1]) // jika elmen tidak dalam urutan yang benar
+                    {
+                        // tukar elemen
+                        int temp;
+                        temp = MT[j];
+                        MT[j] = MT[j +1];
+                        MT[j + 1] = temp;
+                    }
+                }
+            }
+        }
         static void Main(string[] args)
         {
         }
